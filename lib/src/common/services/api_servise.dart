@@ -40,7 +40,7 @@ class ApiService {
         Method.patch =>
           dio.patch<String>(path, queryParameters: queryParameters, data: body),
         Method.delete => dio.delete<String>(path,
-            queryParameters: queryParameters, data: body),
+             queryParameters: queryParameters, data: body),
       };
 
       return switch (response.statusCode) {
